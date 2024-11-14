@@ -4,10 +4,10 @@ public class Cheers {
                 String word = args[0];
                 int cheersNum = Integer.parseInt(args[1]);
 
-                word.toUpperCase();
+                String WORD = word.toUpperCase();
 
-                for (int i = 0; i < word.length(); i++) {
-                        char L = word.charAt(i);
+                for (int i = 0; i < WORD.length(); i++) {
+                        char L = WORD.charAt(i);
                         if (L == 'A' || L == 'E' || L == 'F' || L == 'H' || L == 'I' || L == 'L' || L == 'M' || L == 'N' || L == 'O' || L == 'R' || L == 'S' || L == 'X') {
                                 System.out.println("Give me an " + L + ": " + L + "!");
                         } else {
@@ -18,7 +18,7 @@ public class Cheers {
                 System.out.println("What does that spell?");
 
                 for (int i = 0; i < cheersNum; i++) {
-                        System.out.println(word + "!!!");
+                        System.out.println(WORD + "!!!");
                 }
 
         }
